@@ -3,7 +3,7 @@ import urllib2, json
 class Domainr:
 
 		def search(self, domain):
-		    base_url = "https://domai.nr/api/json/search?q=" + domain
+		    base_url = "https://domai.nr/api/json/search?client_id=python_connor_lib&q=" + domain
 		    request = urllib2.Request(base_url)
 		    request.add_header('User-Agent', 'domainr.py/0.1')
 		    opener = urllib2.build_opener()
@@ -12,7 +12,7 @@ class Domainr:
 		    return response
 
 		def info(self, domain):
-		    base_url = "https://domai.nr/api/json/info?q=" + domain
+		    base_url = "https://domai.nr/api/json/info?client_id=python_connor_lib&q=" + domain
 		    request = urllib2.Request(base_url)
 		    request.add_header('User-Agent', 'domainr.py/0.1')
 		    opener = urllib2.build_opener()
