@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = "domainr",
     version = "1.0.0",
-    description = "Dead-Simple way to interact with Domai.nr JSON API",
+    description = "Dead-Simple way to interact with the Domainr JSON API",
     author = "Connor Montgomery",
     author_email = "c@cnnr.me",
     url = "http://cnnr.me",
